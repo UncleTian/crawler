@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Crawler.iml" filepath="$PROJECT_DIR$/Crawler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pythonCrawler.iml" filepath="$PROJECT_DIR$/pythonCrawler.iml" />
     </modules>
   </component>
 </project>

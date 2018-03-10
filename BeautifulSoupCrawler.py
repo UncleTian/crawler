@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 
 DOWNLOAD_URL = "https://movie.douban.com/top250"
 
+
 def parse_html(html):
     soup = BeautifulSoup(html)
 
@@ -30,7 +31,7 @@ def download_page(url):
 def main():
     url = DOWNLOAD_URL
 
-    with codecs.open('movies.txt', 'wb', encoding = 'utf-8') as fp:
+    with codecs.open('movies.txt', 'wb', encoding='utf-8') as fp:
         while url:
             print("the URL is", url)
             html = download_page(url)
@@ -38,7 +39,8 @@ def main():
             for movie_name in movie_name_list:
                 print(movie_name)
             url = next_page
-            fp.write(u'{movies}\n'.format(movies = '\n'.join(movie_name_list)))
+            fp.write(u'{movies}\n'.format(movies='\n'.join(movie_name_list)))
+
 
 if __name__ == '__main__':
     main()
