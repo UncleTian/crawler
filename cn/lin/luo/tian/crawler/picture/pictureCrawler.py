@@ -3,6 +3,7 @@ import urllib.request
 
 picture_url = 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2047004674,4088207824&fm=27&gp=0.jpg'
 
+
 def main():
     print('Start gathering pictures...')
     download_picture(picture_url)
