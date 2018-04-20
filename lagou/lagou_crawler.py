@@ -1,6 +1,7 @@
-from cn.lin.luo.tian.https import Https
-from cn.lin.luo.tian.settings import headers, cookies
-from cn.lin.luo.tian.data_manage import extract_company_name
+from https import Https
+from settings import headers, cookies
+from data_manage import extract_company_name
+
 import codecs
 
 url = 'https://www.lagou.com/jobs/positionAjax.json'
